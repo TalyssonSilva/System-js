@@ -1,0 +1,110 @@
+
+/* FUNDO PRETO */
+body{
+	font-family: 'Open Sans',sans-serif;
+
+	background-color: white;
+}
+
+
+/* DIV CONTAINER QUADRADO PARA FORMAR O TAMANHO DA CALCULADORA */
+#container{
+	width: 1000px;
+	height: 550px;
+
+	margin: 20px auto;
+}
+
+/* DIV OUTRO CONTAINER QUADRADO PARA FORMAR O TAMANHO DA CALCULADORA */
+#container2{
+	width: 320px;
+	height: 550px;
+	background-color: #000;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+/* ESPAÇO PARA COLOCAR O RESULTADO */
+#resultado{
+	height: 120px;
+}
+#resultado2{
+	height: 30px;
+	width: 320px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 0%;
+	border-width: 0;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 30px;
+
+}
+
+/* LAYOUT DO HISTORICO  */
+#history{
+	text-align: right;
+	height: 150px;
+	margin: 0 8px;
+	padding-top: 10px;
+	font-size: 20px;
+	color: #919191;
+	overflow:scroll;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+#keyboard{
+	height: 400px;
+}
+
+
+
+/*CLASSES ORGANIZADORES DO LAYOUT DOS NUMEROS E OPERADORES*/
+.operadores, .numeros{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 30%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.numeros{
+	background-color: #000;
+}
+.numeros, .operadores{
+	cursor: pointer;
+}
+.operadores:active, .numeros:active{
+	font-size: 13px;
+}
+.operadores:focus, .numeros:focus{
+	outline: 0;
+}
+.operadores{
+	background-color: #676767;
+
+}
+
+/*SELECIONAR O BOTAO PELO NUMERO DE CONTAGEM */
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #f39513;
+
+}
+
+button{
+
+	color:#fff;
+}
